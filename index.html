@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+		
+	<div class="container-inner">
+		<div class="calculator">
+            <div class="section__title">
+                <span class="calc-title">
+                    <div class="works-title">Калькулятор визиток</div>
+                </span>
+            </div>
+            <div class="calc-block">
+                <form action="" class="calc-form" id="calcForm">
+                    <div class="button-area">
+                        <div class="s-column col-1">
+                            <div class="col-title">Способ заказа:</div>
+                            <div class="btn-wrap">
+                                <label for="order-1" class="btn active">
+                                    По шаблону
+                                    <input type="radio" name="order" id="order-1" checked="checked" value="200">
+                                </label>
+                                <label for="order-2" class="btn">
+                                    По готовому макету
+                                    <input type="radio" name="order" id="order-2" value="300">
+                                </label>
+                                <label for="order-3" class="btn">
+                                    Заказать дизайн
+                                    <input type="radio" name="order" id="order-3" value="400">
+                                </label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="s-column col-2">
+                            <div class="col-title">Печать:</div>
+                            <div class="btn-wrap">
+                                <label for="stamp-1" class="btn active">
+                                    Односторонняя
+                                    <input type="radio" name="stamp" id="stamp-1" checked="checked" value="100">
+                                </label>
+                                <label for="stamp-2" class="btn">
+                                    Двусторонняя
+                                    <input type="radio" name="stamp" id="stamp-2" value="200">
+                                </label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="s-column col-3">
+                            <div class="col-title">Бумага:</div>
+                            <div class="btn-wrap">
+                                <label for="paper-1" class="btn active">
+                                    Шелк
+                                    <input type="radio" name="paper" id="paper-1" checked="checked" value="50">
+                                </label>
+                                <label for="paper-2" class="btn">
+                                    Лен
+                                    <input type="radio" name="paper" id="paper-2" value="100">
+                                </label>
+                                <label for="paper-3" class="btn">
+                                    Majestic белый мрамор
+                                    <input type="radio" name="paper" id="paper-3" value="150">
+                                </label>
+                                <label for="paper-4" class="btn">
+                                    Majestic волшебная свеча
+                                    <input type="radio" name="paper" id="paper-4" value="200">
+                                </label>
+                                <label for="paper-5" class="btn">
+                                    Touch cover
+                                    <input type="radio" name="paper" id="paper-5" value="250">
+                                </label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="s-column col-4">
+                            <div class="col-title">Дизайн визитки:</div>
+                            <div class="btn-wrap">
+                                <label for="design-1" class="btn active">
+                                    Стандартный (1 вариант дизайна,<br> 3 изменения в макете)
+                                    <input type="radio" name="design" id="design-1" checked="checked" value="300">
+                                </label>
+                                <label for="design-2" class="btn">
+                                    Премиальный (3 варианта дизайна,<br> неограниченное кол-во изменений в макете)
+                                    <input type="radio" name="design" id="design-2" value="400">
+                                </label>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="s-column col-5">
+                            <div class="col-title">Количество комплектов:</div>
+                            <div class="btn-wrap">
+                                <label for="number-1" class="btn active">
+                                    24 шт.
+                                    <input type="radio" name="number" id="number-1" checked="checked" value="500">
+                                </label>
+                                <label for="number-2" class="btn">
+                                    48 шт.
+                                    <input type="radio" name="number" id="number-2" value="1200">
+                                </label>
+                                <label for="number-3" class="btn">
+                                    96 шт.
+                                    <input type="radio" name="number" id="number-3" value="1600">
+                                </label>
+                                <label for="number-4" class="btn">
+                                    288 шт.
+                                    <input type="radio" name="number" id="number-4" value="2000">
+                                </label>
+                                <label for="number-5" class="btn">
+                                    480 шт.
+                                    <input type="radio" name="number" id="number-5" value="2500">
+                                </label>
+                                <label for="number-6" class="btn">
+                                    960 шт.
+                                    <input type="radio" name="number" id="number-6" value="3000">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="total-area">
+                            <div class="score">
+                                Итого: <span class="total" id="total-value"></span>
+                            </div>
+                            <a class="button button-rounded button-primary-lighter" href="">Заказать услугу</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="specifications">
+                <div class="section__title">
+                    <span class="calc-title">
+                        <div class="works-title">Технические характеристики</div>
+                    </span>
+                </div>
+
+                <div class="content-box">
+                    <div class="left-block">
+                        <ul class="spec-list">
+                            <li class="spec-item">
+                                <div class="spec-item-left">Размер готового изделия
+                                </div>
+                                <div class="spec-item-right">90х50 мм</div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-item-left">Разрешение</div>
+                                <div class="spec-item-right">300 dpi</div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-item-left">Размер формата до обрезки
+                                </div>
+                                <div class="spec-item-right">94х54 мм</div>
+                            </li>
+                            <li class="spec-item">
+                                <div class="spec-item-left">Размер зоны безопасности
+                                </div>
+                                <div class="spec-item-right">84х44 мм</div>
+                            </li>
+                            <li class="spec-item b-item">
+                                <div class="spec-item-left">Цветовой профиль</div>
+                                <div class="spec-item-right">Для оптимальной печати рекомендуем загружать файлы в CMYK</div>
+                            </li>
+                            <li class="spec-item b-item">
+                                <div class="spec-item-left">Типы файлов</div>
+                                <div class="spec-item-right">Вы можете загрузить различные типы файлов: PDF, PSD, TIFF, PNG</div>
+                            </li>
+                            <li class="spec-item b-item">
+                                <div class="spec-item-left">Максимальный размер</div>
+                                <div class="spec-item-right">Размер загружаемого файла не должен превышать 100 МБ</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-block">
+                        <div class="top-block">
+                            <div class="title">Зона безопасности</div>
+                            <p class="desc">
+                                Текст и другие важные элементы дизайна не должны выходить за зону безопасности.
+                            </p>
+                        </div>
+                        <div class="middle-block">
+                            <div class="title">Формат до обрезки</div>
+                            <p class="desc">Общие элементы дизайна, такие как фон размещайте до края поля. Не оставляйте пустых полей.</p>
+                        </div>
+                        <div class="bottom-block">
+                            <div class="text">Формат до обрезки</div>
+                            <div class="card-block"><span>Линия Безопасности</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Script	 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="main.js"></script>	
+</body>
+</html>
